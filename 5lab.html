@@ -1,0 +1,32 @@
+<html>
+<script>
+Student = {}
+Student['name'] = "Nurbek"
+Student['surname'] = "Nurlanbekuly"
+Student['specialty'] = "Programmer?"
+Student.points = {
+"js" : 95,
+"stp" : 92, 
+"tdb" : 89,
+
+}
+Student1 = {
+name: "Amangeldi",
+surname: "Elaman"
+}
+var array = []
+array.push(Student)
+array.push(Student1)
+console.log(Student);
+console.log(Student["surname"]);
+console.log(Student.points.js);
+delete Student.name;
+console.log(Student.name); 
+Student.name="Ayipkeli"
+console.log(Student.name);
+function calc(Student){
+for(var lenght in Student.points){
+console.log(Student[lenght]);
+}
+}
+</script>
